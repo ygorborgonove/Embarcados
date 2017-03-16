@@ -1,3 +1,5 @@
-Aluno: Ygor Pereira Borgonove /n
-matrícula: 14/0166408 /n
-email: ygor.borgonove@hotmail.com
+Aluno: Ygor Pereira Borgonove 
+
+Matrícula: 14/0166408 
+
+Email: ygor.borgonove@hotmail.com
