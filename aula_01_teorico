@@ -1,0 +1,35 @@
+PARTE TEÓRICA – AULA 1 – 7/03
+Ygor Pereira Borgonove
+
+
+
+O que são sistemas embarcados?
+
+	Diferentemente de um computador que possui diversos propósitos e aplicações, um sistema embarcado possui um único propósito e aplicação. Um sistema embarcado executa atividades previamente definidas para sua aplicação e também pode ser reconfigurável via Software. Usar um sistema embarcado implica na redução de custo sobre um projeto e redução do tamanho do hardware por exemplo.
+
+
+O que são sistemas microprocessados?
+	
+	São sistemas que podem utilizar sensores e estes dados são processador via microprocessadores. 
+
+
+Apresente aplicações para sistemas embarcados
+
+	- Indústria Automotiva: Os acionadores de airbags.
+	- Eletrodomésticos: Video-Games.
+	- Automação Industrial: Como citado em sala os robôs “GPS” da Amazon que sabem a localização de cada componente do depósito.
+
+
+Cite Arquiteturas possíveis e as diferenças entre elas.
+	
+	ASIC, FPGAs que basicamente é utilizada para processamentos paralelos e DSPs que são utilizados para sistemas que requerem muita rapidez. 
+
+
+Por que usamos o Raspberry Pi?
+	
+	Devido ao amplo conhecimento e facilidade com a placa, custo acessível, compatibilidade com linux, em geral pela facilidade em manusear e utilizar a placa. 
+
+		
+	
+	
+	

@@ -1,0 +1,51 @@
+ 1. Por que o Linux recebeu esse nome?
+
+	Devido ao fato de que o criador do kernel se chamava Linus Torvalds e o sistema operacional em que foi baseado foi o unix, dai se tem a relação do por que se chama Linux.
+
+
+2. O que são daemons?
+
+	Daemons é um programa que executa como um processo em plano de fundo e este não é controlado por um usuário normalmente.
+
+
+3. O que é shell?
+
+	Shell é a camada externa entre o usuário e o kernel do sistema operacional, é basicamente a interação do usuário diretamente com o kernel do sistema.
+
+
+4. Por que é importante evitar executar o terminal utilizando super-usuário?
+
+	Pois caso algum arquivo seja editado e este seja de suma importância para o sistema, o sistema entrará em colapso e podem ocorrer danos irreparáveis. Por isso é evitado usar o super-usuário.
+
+
+5. Qual botão no teclado que completa o que o usuário quer escrever no terminal?
+
+	TAB
+
+6. Quais botões do teclado apresentam instruções escritas anteriormente?
+
+	Cima.
+
+7. Apenas apresente os respectivos comandos:
+
+a) Obter mais informações sobre aquele comando: $ man
+b) Apresentar uma lista com os arquivos dentro de uma pasta: $ ls
+c) Apresentar o caminho completo da pasta: $ pwd
+d) Trocar de pasta: $ cd
+e) Criar uma pasta: $ mkdir
+f) Apagar arquivos definitivamente: $ rm
+g) Apagar pastas definitivamente: $ rm -r
+h) Copiar arquivos: $ cp
+i) Copiar pastas: $ cp -r
+j) Mover arquivos: $ mv
+k) Mover pastas: $ mv -f
+l)  Renomear pastas: $ mv
+m) Apresentar o conteúdo do arquivo: $ cat
+n) Apresentar o tipo do arquivo: $ file
+o) Limpar a tela: $ clear
+p) Encontrar ocorrências de palavras-chave em um arquivo: $ grep -n
+q) Ordenar informações em um arquivo-texto: $ sort
+r) Substituir ocorrências de palavras-chaves: $ sed
+s) Conferir se dois arquivos são iguais: $ diff
+t) Escrever algo na tel: $ random cat
+	
