@@ -1,0 +1,53 @@
+Data: 23/03/2017
+
+1. Considerando a biblioteca-padrão da linguagem C, responda:
+	(a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
+		R: fopen = fp(nome_do_arquivo, "w"|"r"|"r+"|"w+"|"a"|"a+"). 
+		"r" =  Open text file for reading.  The stream  is  positioned  at  the beginning of the file. 
+		"r+" = Open  for  reading and writing.  The stream is positioned at the beginning of the file.
+		"w" = Truncate file to zero length or create text  file  for  writing. The stream is positioned at the beginning of the file.
+		"w+" = Open  for  reading  and writing.The file is created if it does not exist, otherwise it is truncated. The stream is  positioned at the beginning of the file.
+		"a" = Open  for  appending (writing at end of file).The file is created if it does not exist.  The stream is positioned at the  end of the file.
+		"a+" = Open  for  reading  and appending (writing at end of file).  The
+              file is created if it does not exist.The initial file position for  reading  is  at  the  beginning  of the file, but output is always appended to the end of the file.
+
+
+		   fclose(fp).
+		
+	(b) Quais são as funções (e seus protótipos) para escrever em arquivos?
+		R: fprintf, fputs e fputc.
+
+	(c) Quais são as funções (e seus protótipos) para ler arquivos?
+		R: fscanf, fgetc, fgets, ungetc.
+
+	(d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
+		R: fseek, rewind, fsetpos, ftell, fgetpos.
+
+	(e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
+		R: stdio.h 
+
+2. O que é a norma POSIX?
+	R: Portable Operating System Interface (POSIX) é um conjunto de normas definidas pela IEEE e usada para garantir a compatibilidade entre sistemas operacionais. 
+
+3. Considerando a norma POSIX, responda:
+	(a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
+		R: int open("caminho arquivo", flags).
+		   O_WRONLY = write only.
+		   O_RDWR = ready and write only.
+		   O_RDONLY = ready only.
+		   O_APPEND = append for each write (escreve ao final do arquivo).
+		   O_CREAT = create file if it does not exist. 
+
+		   int close(descritor de arquivos(tipo "int, long, char...")).
+
+	(b) Quais são as funções (e seus protótipos) para escrever em arquivos?
+		R: int open("caminho arquivo", O_WRONLY, O_APPEND, O_RDWR).
+
+	(c) Quais são as funções (e seus protótipos) para ler arquivos?
+		R: int open("caminho arquivo", O_RDWR, O_RDONLY).
+
+	(d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
+		R: off_t lseek(Descritor de arquivo, valor offset, int SEEK_SET | SEEK_CUR | SEEK_END).
+
+	(e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
+		R: fcntl.h
