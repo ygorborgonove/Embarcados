@@ -1,0 +1,34 @@
+Data: 28/03/2017
+
+1. Como se utiliza o comando 'ps' para:
+	(a) Mostrar todos os processos rodando na máquina?
+		R: ps 	
+	(b) Mostrar os processos de um usuário?
+		R: ps -u "usuário"
+	(c) Ordenar todos os processos de acordo com o uso da CPU?
+		R: ps --sort=pcpu
+	(d) Mostrar a quanto tempo cada processo está rodando?
+		R: ps -eo 
+2. De onde vem o nome fork()?
+		R: vem de bifurcação, entroncamento.
+3. Quais são as vantagens e desvantagens em utilizar:
+	(a) system()?
+		R:o system administra, basicamente, os sub-processos e processos. Este comando interrompe processos para entao rodar o processos que o usuario deseja.
+	(b) fork() e exec()?
+		R: o fork faz uma cópia do processo pai, este denominado processo filho e o exec como o próprio na diz, cria e executa um programa.
+4. É possível utilizar o exec() sem executar o fork() antes?
+		R: não, é necessário que o fork seja feito antes do exec
+
+5. Quais são as características básicas das seguintes funções:
+	(a) execp()?
+		R: função que chama um processo com um nome por current path.
+	(b) execv()?
+		R: função que chama um processo por nome passado por ponteiro.
+	(c) exece()?
+		R: 
+	(d) execvp()?
+		R: executa o programa a partir do ponteiro de current path.
+	(e) execve()?
+		R: 
+	(f) execle()?
+		R: função que chama e aceita arguntos tipo argv/argc.
