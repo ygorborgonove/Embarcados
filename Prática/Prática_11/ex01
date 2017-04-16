@@ -1,0 +1,29 @@
+Data: 13/04/2017
+
+1. Utilize o programa criado pelo professor para baixar as páginas principais dos seguintes sites:
+	(a) www.google.com
+	(b) www.google.com.br
+	(c) www.unb.br
+	(d) fga.unb.br
+
+Comente os resultados obtidos para cada página, em termos das respostas HTTP e HTML obtidas.
+
+	Para a página www.google.com.br o código demorou para baixar totalmente, e ao terminar foi observador uma mensagem que a página tinha mudado de endereço 
+
+HTTP/1.1 302 Found Location: http://www.google.com.br/?gws_rd=cr&ei=DZrzWI61A4KjwgT70a-YCA Cache-Control: private Content-Type: text/html; charset=UTF-8 P3P: CP="This is not a P3P policy! See https://www.google.com/support/accounts/answer/151657?hl=en for more info." Date: Sun, 16 Apr 2017 16:21:33 GMT Server: gws Content-Length: 262 X-XSS-Protection: 1; mode=block X-Frame-Options: SAMEORIGIN Set-Cookie: NID=101=W-_anGLTIsXmoZylq2QTVibXb8jKxPFn3h7XUM-IuFUwCZ_gbf_XTEwegu65MYTfSynGvJphFbe1rL7yeAKqqh0iYo6bHXYUfRIwNg11LY70hvfM7YwN4-DuyD00pt82; expires=Mon, 16-Oct-2017 16:21:33 GMT; path=/; domain=.google.com; HttpOnly
+
+302 Moved
+
+The document has moved here.
+
+	Isso pode ter acontecido devido aos diferentes protocolos usados pelo programa e pela página.
+
+	A página www.google.com.br foi baixada normalmente porém faltando algumas imagens e com a seguinte mensagem
+
+HTTP/1.1 200 OK Date: Sun, 16 Apr 2017 16:32:19 GMT Expires: -1 Cache-Control: private, max-age=0 Content-Type: text/html; charset=ISO-8859-1 P3P: CP="This is not a P3P policy! See https://www.google.com/support/accounts/answer/151657?hl=en for more info." Server: gws X-XSS-Protection: 1; mode=block X-Frame-Options: SAMEORIGIN Set-Cookie: NID=101=gi1IRaglGR1Ef1XvR2svF40HRS283Zk1yZF3ZoSgGugafskUlmDLHoAUgbF2QqrZYR1lugkjlVc6F6lv_am6cOy_nBcVMQIMbFAREnGAOQ4_7mnkLuzfjyGcBg3viMzn; expires=Mon, 16-Oct-2017 16:32:19 GMT; path=/; domain=.google.com.br; HttpOnly Accept-Ranges: none Vary: Accept-Encoding Transfer-Encoding: chunked 2abb	
+
+	A página www.unb.br foi baixada sem problema nenhum, isso quer dizer que o protocolo usado pelo programa foi exatamente o utilizado pelo site HTTP.
+	
+	Não foi possivel baixar a página da FGA pois essa utiliza o protocolo da HTTPS. 
+
+	
