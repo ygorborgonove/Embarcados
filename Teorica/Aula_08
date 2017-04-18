@@ -1,0 +1,59 @@
+Data: 04/03/2017
+
+1. Quais são as vantagens e desvantagens em utilizar:
+	(a) fork?
+		copia as variaveis em cada processo ocupando mais memoria, precisa de pipes e sinais para comunicação entre processos.
+	(b) threads?
+		variaveis globais, seja, menos uso de memoria; por usar sistema de pilha ao mexer numa variavel ela mexe por completo em todo o programa
+
+2. Quantas threads serão criadas após as linhas de código a seguir? Quantas coexistirão? Por quê?
+	(a)
+		void* funcao_thread_1(void *arg);
+		void* funcao_thread_2(void *arg);
+		
+		int main (int argc, char** argv)
+		{
+			pthread_t t1, t2;
+			pthread_create(&t1, NULL, funcao_thread_1, NULL);
+			pthread_create(&t2, NULL, funcao_thread_2, NULL);
+			pthread_join(t1, NULL);
+			pthread_join(t2, NULL);
+			return 0;
+		}
+		nesse caso as duas coexistem, pois sao criadas ao mesmo tempo e são finalizadas ao "mesmo" tempo.
+
+	(b)
+		void* funcao_thread_1(void *arg);
+		void* funcao_thread_2(void *arg);
+		
+		int main (int argc, char** argv)
+		{
+			pthread_t t1, t2;
+			pthread_create(&t1, NULL, funcao_thread_1, NULL);
+			pthread_join(t1, NULL);
+			pthread_create(&t2, NULL, funcao_thread_2, NULL);
+			pthread_join(t2, NULL);
+			return 0;
+		}
+		
+		neste caso cada thread eh criado e logo depois que ele termina ja é fechado, entao sao criadas duas threads porem elas nao coexistem		
+
+3. Apresente as características e utilidades das seguintes funções:
+	(a) pthread_setcancelstate()
+		The pthread_setcancelstate() sets the cancelability state of the  call‐
+       ing  thread  to  the  value given in state.  The previous cancelability
+       state of the thread is returned in the buffer pointed to  by  oldstate.
+       The state argument must have one of the following values:
+
+	(b) pthread_setcanceltype()
+		The  pthread_setcanceltype() sets the cancelability type of the calling
+       thread to the value given in type.  The previous cancelability type  of
+       the  thread  is returned in the buffer pointed to by oldtype.  The type
+       argument must have one of the following values:
+
+
+
+
+
+
+
