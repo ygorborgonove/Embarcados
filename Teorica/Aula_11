@@ -1,0 +1,44 @@
+Data: 13/04/2017
+
+1. Especifique algumas portas importantes pré-definidas para o protocolo TCP/IP.
+	http: 80
+	https: 443
+	ftp: 21
+	ssh: 22
+	telnet: 23
+	SMTP: 25
+	POP3: 110
+
+2. Com relação a endereços IP, responda:
+	(a) Qual é a diferença entre endereços IP externos e locais?
+	(b) Como endereços IP externos são definidos? Quem os define?
+	(c) Como endereços IP locais são definidos? Quem os define?
+	(d) O que é o DNS? Para que ele serve?
+	O Domain Name System (DNS) é um sistema de gerenciamento de nomes hierárquico e distribuído para computadores, é usado para que as pessoas nao precisem ficar gravando ips de sites, ele associa o ip de um site com seu nome, sendo assim os usuarios só precisam saber qual o nome do site que querem acessar.
+
+3. Com relação à pilha de protocolos TCP/IP, responda:
+	(a) O que são suas camadas? Para que servem?
+	as camadas funçoes que permitem o funcionamento do socket.
+	(b) Quais são as camadas existentes? Para que servem?
+	socket: cria um socket
+	bind: associa o socket de um servidor a um end
+	listen: configura um socket para aceitar conexão
+	accept: aceita a conexão e cria um outro socket para a conexão
+	recv: recebe dados
+	send: envia dados
+	connect: cria uma conexão entre dois sockets (cliente)
+	close: destroi o socket
+
+	(c) Quais camadas são utilizadas pela biblioteca de sockets?
+	(d) As portas usadas por servidores na função bind() se referem a qual camada?
+	(e) Os endereços usados por clientes na função connect() se referem a qual camada?
+
+4. Qual é a diferença entre os métodos GET e POST no protocolo HTTP?
+	o get gera um cabeçalho que ao baixar a página mostra alguns dados, ja o post nao exibe esse cabeçalho;
+	o get por usar url tem limitação ha limitação de 255 caracteres, o post nao
+	o get é bem mais rápido pois não a o encapsulamento.
+	
+
+
+
+
